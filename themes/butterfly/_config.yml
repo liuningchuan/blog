@@ -1,0 +1,423 @@
+# 自定义主题色
+theme_color:
+  enable: true
+  main: "#7A7FF1"
+  paginator: "#7A7FF1"
+  button_hover: "#FF7242"
+  text_selection: "#69c46d"
+  link_color: "#858585"
+  hr_color: "#A4D8FA"
+  read-mode-bg_color: '#FAF9DE'
+
+# Main menu navigation
+# format: xxx: /xxx/||icon
+# fa fa-home是图标
+menu:
+  首页: /||fa fa-home
+  时间轴: /archives/||fa fa-archive
+  标签: /tags/||fa fa-tags
+  分类: /categories/||fa fa-folder-open
+  相册: /gallery/||fa fa-file-photo-o
+  关于: /about/||fa fa-bars
+#   #XXX: /xxx
+
+
+# Favicon
+# ---------------
+favicon: /img/favicon.ico
+
+# PWA
+# See https://github.com/JLHwung/hexo-offline
+# ---------------
+# pwa:
+#   enable: true
+#   manifest: /img/pwa/manifest.json
+#   theme_color: "#fff"
+#   apple_touch_icon: /img/pwa/apple-touch-icon.png
+#   favicon_32_32: /img/pwa/32.png
+#   favicon_16_16: /img/pwa/16.png
+#   mask_icon: /img/pwa/safari-pinned-tab.svg
+#   shortcut_icon: /img/favicon.ico
+
+
+# 代码高亮主题
+# 支持Material Theme全部5种代码高亮模式 default、darker、pale night、light、ocean
+highlight_theme: light
+# 代码复制功能
+highlight_copy: false
+# 代码换行，需要将line_number设置为false
+code_word_wrap: false
+
+# Nav settings
+# formal: 
+#   icon: link
+# ---------------
+social:
+  fa fa-github: https://github.com/jerryc127
+  fa fa-rss: /atom.xml
+
+# Algolia search
+# ---------------
+algolia_search:
+  enable: false
+  hits:
+    per_page: 6
+
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
+    hits_stats: "${hits} results found in ${time} ms"
+
+
+# Local search
+# Please see doc for more details: https://jerryc.me/posts/21cfbf15/#本地搜索
+# ---------------
+local_search:
+  enable: false
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
+
+# MathJax
+# Please see doc for more details: https://jerryc.me/posts/21cfbf15/#MathJax
+# ---------------
+mathjax:
+  enable: false
+  cdn: https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# KaTeX
+# ---------------
+katex:
+  enable: false
+  cdn:
+    css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css  
+  hide_scrollbar: true
+
+
+
+# Analysis
+# ---------------
+# baidu_analytics: 
+
+#Google Analytics
+google_analytics:
+
+
+# stylesheets loaded in the <head>
+# ---------------
+stylesheets:
+  - /css/index.css
+
+# scripts loaded in the end of the body
+# ---------------
+scripts:
+  - /js/utils.js
+  - /js/main.js
+
+# cdn for third-party library
+# ---------------
+cdn:
+  css:
+    fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
+    # fontawesomeV5: https://use.fontawesome.com/releases/v5.8.1/css/all.css
+    fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
+  js:
+    jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+    fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
+    js-cookies: https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js
+    lozy: https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js
+
+
+# Post info settings
+# 头像
+# avatar: /img/avatar.png
+avatar: /images/ironman-draw.jpg
+
+# the banner image of index
+# if the banner of another page not setting,it will show the top_img
+top_img: https://i.loli.net/2019/05/22/5ce53eb6dc82757840.jpg
+
+#the banner image of post
+# if the post not set the post cover and post top image, it will show it
+post_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/post.png
+
+# the default cover of the post
+# 默认文章封面
+default_cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png
+
+# the banner image of archive page
+archive_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/archive.jpg
+
+# if the photo link cannot connect,it will show that
+lodding_bg:
+  flink: /img/friend_404.gif
+  post_page: /img/404.jpg
+
+
+post_meta:
+  date_type: created # or created or updated 文章日期是创建日或者更新日或都显示
+  categories: true # or false 是否显示分类
+  tags: true # or false 是否显示标签
+
+# Please see doc for more details: https://jerryc.me/posts/21cfbf15/#字数统计
+wordcount:
+  enable: false
+
+# 文章导航
+toc:
+  enable: false
+  number: true
+
+# auto open the sidebar in 'post'
+auto_open_sidebar:
+  enable: true
+
+# post_copyright:
+#   enable: true
+#   license: CC BY-NC-SA 4.0
+#   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 设置为true则文章会自动截取150个字显示在主页
+# 设置为false则会显示font-matter里面的description
+auto_excerpt:
+  enable: true
+  length: 150
+
+
+# Share System
+# ---------------
+addThis:
+  enable: false
+  pubid:
+
+sharejs:
+  enable: true
+  sites: facebook,twitter,wechat,weibo,qq
+
+# https://www.addtoany.com/
+addtoany:
+  enable: false
+  item:
+    - facebook
+    - twitter
+    - wechat
+    - sina_weibo
+    - facebook_messenger
+    - email
+    - copy_link
+
+# # Comments System
+# # ---------------
+disqus:
+  enable: false
+  shortname: 
+  
+# laibili:
+  # enable: false
+  # uid:
+
+# gitment
+  # enable: false
+  # owner: 
+  # repo: 
+  # client_id: 
+  # client_secret: 
+
+# gitalk:
+#   enable: false
+#   client_id: 
+#   client_secret: 
+#   repo:
+#   owner:
+#   admin:
+####   Using this js for redirect to gitalk container after login
+####   See https://github.com/gitalk/gitalk/issues/125
+#   js: https://cdn.jsdelivr.net/gh/upupming/gitalk@36368e5dffd049e956cdbbd751ff96c28d8255cf/dist/gitalk.min.js
+
+# valine comment system. https://valine.js.org
+valine:
+  enable: false # if you want use valine,please set this value is true
+  appId:   # leancloud application app id
+  appKey:   # leancloud application app key
+  notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+  verify: false # valine verify code (true/false)
+  pageSize: 10 # comment list page size
+  avatar: monsterid # gravatar style https://valine.js.org/#/avatar
+  lang: en # i18n: zh-cn/en
+  placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail,link #valine comment header inf
+
+# Footer Settings
+# ---------------
+since: 2018
+
+footer_custom_text:
+
+footer_copyright:
+  enable: true
+
+ICP:
+  enable: false
+  url: 
+  text:
+
+# busuanzi count for PV / UV in site
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+
+
+
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+google_site_verification:
+
+# Bing Webmaster tools verification setting
+# See: https://www.bing.com/webmaster/
+bing_site_verification:
+
+# Baidu Webmaster tools verification setting
+# See: https://ziyuan.baidu.com/site/
+baidu_site_verification:
+
+# 360 Webmaster tools verification setting
+# see http://zhanzhang.so.com/
+qihu_site_verification:
+
+Flink:
+  headline: 友情鏈接
+  info_headline: 我的Blog資料
+  name: Blog 名字： JerryC
+  address: Blog 地址： https://jerryc.me/
+  avatar: Blog 頭像： https://jerryc.me/img/avatar.png
+  info: Blog 簡介： 今日事,今日畢
+  comment: 如果需要交換友鏈,請留言
+
+ 
+
+runtimeshow:
+  enable: true
+  start_date: 6/7/2019 00:00:00
+
+
+nightshift:
+  enable: true
+
+
+activate_power_mode:
+  enable: false
+
+
+
+announcement:
+  content: 感謝訪問本站，若喜歡請收藏 ^_^
+
+reward:
+  enable: false
+  QR_code:
+    - itemlist:
+        img: /img/wechat.jpg
+        text: 微信
+    - itemlist:
+        img: /img/alipay.jpg
+        text: 支付寶
+
+related_post:
+  enable: true
+  limit: 6 # 顯示推薦文章數目
+
+# canvas_ribbon
+# See: https://github.com/hustcc/ribbon.js
+canvas_ribbon:
+  enable: true
+  size: 150
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false
+
+
+canvas_ribbon_piao:
+  enable: false
+
+
+# 避免重複網址分散seo
+canonical: true
+
+# 禁止百度轉碼
+disable_baidu_transformation: true
+
+twitter_meta: true
+Open_Graph_meta: true
+
+#閲讀模式
+readmode:
+  enable: true
+
+#全局字體
+font:
+  enable: false
+  font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB,"Microsoft JhengHei", "MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
+  code-font: consolas, Menlo, "PingFang SC", "Microsoft JhengHei","Microsoft YaHei", monospace, Helvetica Neue For Number
+
+#網站名字字體
+#左上角網站名字 主頁居中網站名字
+blog_title_font:
+  #字體鏈接
+  font_link: https://fonts.googleapis.com/css?family=Titillium+Web
+  font-family: Titillium Web, PingFang SC, Hiragino Sans GB, "Microsoft JhengHei", "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
+
+#水平分隔綫
+hr:
+  enable: false
+  #fontawesome上圖標的Unicode
+  icon: '\f21c'
+  icon-top: -20px
+
+# 主頁subtitle
+subtitle: 
+  enable: true
+  sub1: 独立之精神,自由之思想
+  sub2: The Spirit Of Independence, Freedom Of Thought
+
+#側邊欄顯示設置
+aside:
+  card_author: true
+  card_announcement: true
+  card_recent_post: true
+  card_categories: true
+  card_tags: true
+  card_archives: true
+  card_webinfo: true
+
+
+## chinese traditional to Simplified
+# translate:
+#   enable: false
+#   # 默認按鈕顯示文字
+#   default: 繁
+#   #网站默认语言，1: 繁體中文, 2: 简体中文
+#   defaultEncoding: 1
+#   #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+#   translateDelay: 0
+#   #博客网址
+#   cookieDomain: "https://xxx/"
+#   #當文字是簡體時，按鈕顯示的文字
+#   msgToTraditionalChinese: "繁"
+#   #當文字是繁體時，按鈕顯示的文字
+#   msgToSimplifiedChinese: "简"
+
+
+# 鼠標點擊效果
+fireworks:
+  enable: false
+
+#百度推送
+baidu_push:
+  enable: false
+
+#https://instant.page/
+#prefetch預加載
+instantpage:
+  enable: true

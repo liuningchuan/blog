@@ -1,0 +1,107 @@
+// Theme Global Color
+$theme-color = #49B1F5
+$theme-paginator-color = #00c4b6
+$theme-button-hover-color = #FF7242
+$theme-text-selection-color = #00c4b6
+$theme-meta-color = #858585
+$theme-link-color = #99a9bf
+$theme-hr-color = #A4D8FA
+$theme-read-mode-bg-color = #FAF9DE
+$font-family= Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
+$code-font = consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number
+$site-name-font = "Titillium Web", Lato,PingFang SC, Hiragino Sans GB, "Microsoft JhengHei", "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
+//hr icon
+$hr-icon = '\f0c4'
+$hr-icon-top = -10px
+
+if hexo-config("theme_color") && hexo-config("theme_color.enable")
+  $theme-color = convert(hexo-config("theme_color.main")) || #49B1F5
+  $theme-paginator-color = convert(hexo-config("theme_color.paginator")) || #00c4b6
+  $theme-button-hover-color = convert(hexo-config("theme_color.button_hover")) || #FF7242
+  $theme-text-selection-color = convert(hexo-config("theme_color.text_selection")) || #00c4b6
+  $theme-link-color = convert(hexo-config("theme_color.link_color")) || #99a9bf
+  $theme-meta-color = convert(hexo-config("theme_color.meta_color")) || #858585
+  $theme-hr-color = convert(hexo-config("theme_color.hr_color")) || #A4D8FA
+  $theme-read-mode-bg-color = convert(hexo-config("theme_color.read-mode-bg_color")) || #FAF9DE
+
+if hexo-config("font") && hexo-config("font.enable")
+  $font-family = convert(hexo-config("font.font-family")) || 'Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif'
+  $code-font = convert(hexo-config("font.code-font")) || 'consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number'
+
+if hexo-config("blog_title_font.font-family")
+  $site-name-font = convert(hexo-config("blog_title_font.font-family")) || '"Titillium Web",Lato,PingFang SC, Hiragino Sans GB, "Microsoft JhengHei", "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif'
+
+
+if hexo-config("hr") && hexo-config("hr.enable")
+  $hr-icon = hexo-config("hr.icon") || '\f0c4'
+  $hr-icon-top = convert(hexo-config("hr.icon-top")) || -10px
+
+
+// Global Variables
+$font-size = 14px
+$font-color = #1F2D3D
+$rem = 20px
+$font-family = $font-family
+$code-font = $code-font
+$site-name-font = $site-name-font
+$text-line-height = 2
+$sm = 768px
+$bg = 1024px
+$md = 1300px
+$lg = 1450px
+$sidebar-icon-top = 20px
+$sidebar-icon-left = $sidebar-icon-top - 4px
+$sidebar-icon-size = 16px
+$go-up-bottom = $sidebar-icon-top
+$go-up-right = -($sidebar-icon-left)
+// Global color & SVG
+$pale-blue = $theme-hr-color
+$light-blue = $theme-color
+$blue = #1B9EF3
+$dark-blue = #0790E8
+$orange = #F1BE48
+$pale-green = #B4E1C1
+$light-green = #69C282
+$green = #44B363
+$dark-green = #379F54
+$pale-cyan = #D1F4F2
+$light-cyan = #8CE4DE
+$cyan = $theme-paginator-color
+$pale-red = #F9b9b3
+$light-red = #F47466
+$red = #F15140
+$dark-red = #E63E2C
+$ruby = $theme-button-hover-color
+$light-black = #3B3A3A
+$black = #2E2E2E
+$dark-black = #000000
+$pale-grey = #F7F7F7
+$light-grey = #EEEEEE
+$grey = $theme-meta-color
+$pale-yellow = $theme-read-mode-bg-color
+$white = #FFFFFF
+$dark-white = #F9F9F9
+$font-black = #4C4948
+$selection = $theme-text-selection-color
+
+// code
+$code-font-size = $font-size
+$code-font-family = $font-family
+$code-foreground = $font-color
+$code-background = rgba(27, 31, 35, 0.05)
+$line-height-code-block = 20px
+$blockquote-color = #6a737d
+$blockquote-padding-color = $theme-color
+$blockquote-background-color = rgba(73, 177, 245,0.1)
+// page
+$content-width = 800px
+$content-large-width = 1000px
+$a-link-color = $theme-link-color
+$a-hover-color = #82AAFF
+$img-border-color = #eaeefb
+$img-border-padding = 4px
+// sidebar
+$sidebar-width = 300px
+$sidebar-background = #f6f8fa
+
+
