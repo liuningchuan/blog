@@ -7,7 +7,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://liuningchuan.github.io       # Note: don't forget to modify the CNAME file to your url
+url: http://lnlynn.github.io       # Note: don't forget to modify the CNAME file to your url
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -26,9 +26,9 @@ header-img: images/header_img/home-bg-2-dark.png
 
 # SNS settings
 # RSS: false
-github_username:    liuningchuan
+github_username:    lnlynn
 weibo_username:     realLiuNing
-zhihu_username:     liuningchuan
+zhihu_username:     lnlynn
 # twitter_username:   Demonbane_x
 # facebook_username:  YenYuHsuan
 # linkedin_username:  yu-hsuan-yen
@@ -173,5 +173,5 @@ sitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:liuningchuan/liuningchuan.github.io.git
+  repository: git@github.com:lnlynn/lnlynn.github.io.git
   branch: master
