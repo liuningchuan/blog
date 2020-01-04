@@ -64,4 +64,29 @@ public static ExecutorService newCachedThreadPool() {
 }
 ```
 
+线程池中的工作线程回收需要满足三个条件：
+
+- 参数allowCoreThreadTimeOut为true
+- 该线程在keepAliveTime时间内获取不到任务，即空闲这么长时间
+- 当前线程池大小 > 核心线程池大小corePoolSize
+
+需要注意的是，allowCoreThreadTimeOut的设置需要在任务执行之前，一般在new一个线程池后设置；在allowCoreThreadTimeOut设置为true时，ThreadPoolExecutor的keepAliveTime参数必须大于0.
+
+> ```java
+> /**
+>  * Timeout in nanoseconds for idle threads waiting for work.
+>  * Threads use this timeout when there are more than corePoolSize
+>  * present or if allowCoreThreadTimeOut. Otherwise they wait
+>  * forever for new work.
+>  */
+> private volatile long keepAliveTime;
+> 
+> /**
+>  * If false (default), core threads stay alive even when idle.
+>  * If true, core threads use keepAliveTime to time out waiting
+>  * for work.
+>  */
+> private volatile boolean allowCoreThreadTimeOut;
+> ```
+
 #### ThreadFactory
