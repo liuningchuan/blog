@@ -249,6 +249,14 @@ $ git reset [c6e60b6705359d05dde]
 
 ```bash
 $ git reset --hard [c6e60b6705359d05dde]
+$ git reset --hard HEAD
 ```
 
  使用该命令，工作区的文件一旦撤销，再也无法找回。
+
+```shell
+$ git reset HEAD
+```
+
+已经git add的文件，使用该命令恢复成未提交状态。
+
