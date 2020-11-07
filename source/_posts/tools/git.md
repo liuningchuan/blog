@@ -243,6 +243,7 @@ git revert命令还有两个参数
 
 ```bash
 $ git reset [c6e60b6705359d05dde]
+$ git reset HEAD
 ```
 
 默认情况下，该命令只改变暂存区，不改变工作区的文件。`--hard`参数可以让工作区的文件也回到之前的状态。
@@ -259,4 +260,3 @@ $ git reset HEAD
 ```
 
 已经git add的文件，使用该命令恢复成未提交状态。
-
